@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PEPSI</title>
+  </head>
+  <body dir="rtl">
+    <section class="sec">
+      <header>
+        <a href="#">
+          <img src="logo.png" alt="logo" class="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="#">خانه</a>
+          </li>
+          <li>
+            <a href="#">محصولات</a>
+          </li>
+          <li>
+            <a href="#">درباره ما</a>
+          </li>
+          <li>
+            <a href="#">نمایندگی ها</a>
+          </li>
+          <li>
+            <a href="#">خبرنامه</a>
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>کُک دوست ندارم ,<br /><span id="text"> پپسی :)</span></h2>
+        </div>
+        <div class="imageBox">
+          <img src="pepsi001.png" alt="pepsi" class="pepsi" />
+        </div>
+      </div>
+      <ul class="tumb">
+        <li>
+          <img
+            src="pepsi001.png"
+            onclick="imageSlider('pepsi001.png');changeBackground('#0062be');changeTitle('پپسی معمولی')"
+          />
+        </li>
+        <li>
+          <img
+            src="pepsi002.png"
+            onclick=" imageSlider('pepsi002.png');changeBackground('#e60c2c');changeTitle('پپسی لایت')"
+          />
+        </li>
+        <li>
+          <img
+            src="pepsi003.png"
+            onclick=" imageSlider('pepsi003.png');changeBackground('#1e1e1e');changeTitle('پپسی مکس')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="">
+            <img src="facebook.png" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="twitter.png" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="instagram.png" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imageSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+      function changeBackground(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+      function changeTitle(text) {
+        console.log(text);
+        document.getElementById("text").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

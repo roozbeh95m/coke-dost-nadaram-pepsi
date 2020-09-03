@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "IRANSansWeb";
+  src: local("IRANSansWeb"), url("./fonts/woff/IRANSansWeb.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANSansWeb;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0064be;
+  transition: 1s;
+}
+header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-height: 100px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 40px;
+  text-decoration: none;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+.content .textBox h2 {
+  color: #fff;
+  font-size: 3.5em;
+  line-height: 2em;
+  font-weight: bold;
+}
+.content .textBox h2 span {
+  font-size: 2em;
+}
+.content .imageBox {
+  width: 600px;
+  display: flex;
+  padding-left: 50px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content .imageBox img {
+  min-height: 350px;
+}
+.tumb {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.tumb li {
+  list-style: nome;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.tumb li:hover {
+  transform: translateY(-15%);
+}
+.tumb li img {
+  max-width: 40px;
+}
+.sci {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  filter: invert(1);
+  display: inline-block;
+  padding: 5px 5px;
+}
+.sci li a img {
+  max-height: 20px;
+  max-width: 20px;
+}

@@ -1,4 +1,4 @@
-# cock-dost-nadaram-pepsi
+# Cock-Dost-Nadaram-Pepsi
 Creative HTML and CSS Website
   Made to demonstrate my Front-end Web Development skills
 
